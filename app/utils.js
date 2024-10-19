@@ -12,7 +12,8 @@ export function formatDistance(value) {
 
 export function ease(t, b, v, d) {
   let c = v > 300 ? Math.floor(300 * 1) : Math.floor(v * 1);
-  return c * ((t = t / d - 1) * Math.pow(t, 2) + 1) + b;
+  const x = t / d;
+  return c * (1 - Math.pow(1 - x, 3)) + b;
 }
 
 export function timestampConverter(timestamp) {

@@ -82,7 +82,9 @@ function showContent(content) {
 
 function showError(err) {
   let errScr = document.getElementById("error");
-  errScr.getElementById("copy").text = getLocText(`${err.errType}_error`);
+  const err = getLocText(`${err.errType}_error`);
+  console.error(err);
+  errScr.getElementById("copy").text = err;
   errScr.animate("enable");
   appAnalytics.trackScreen("error");
 }

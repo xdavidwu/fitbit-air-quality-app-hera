@@ -88,7 +88,8 @@ export class PanoramaItem {
   updateArc() {
     if (this.time > this.dur) return;
     if (!this.data) return;
-    this.arcFront.sweepAngle = ease(this.time, 0, this.data.aqi.val, this.dur);
+    const v = ease(this.time, 0, this.data.aqi.val, this.dur);
+    this.arcFront.sweepAngle = v;
     this.time++;
   }
 }

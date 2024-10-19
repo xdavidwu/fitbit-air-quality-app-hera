@@ -2,13 +2,13 @@
   "name": "fitbit-air-quality-app",
   "version": "4.2.0",
   "private": true,
-  "license": "UNLICENSED",
+  "license": "MIT",
   "devDependencies": {
-    "@fitbit/sdk": "^3.1.2",
-    "@fitbit/sdk-cli": "^1.7.0"
+    "@fitbit/sdk": "^7.2.0-pre.0",
+    "@fitbit/sdk-cli": "^1.8.0-pre.11"
   },
   "fitbit": {
-    "appUUID": "b66657c1-f6d2-4397-af8c-50992340e8b4",
+    "appUUID": "e1e36000-4d14-44f8-9acc-1ea4e77db548",
     "appType": "app",
     "appDisplayName": "Air Quality",
     "iconFile": "resources/icon.png",
@@ -19,9 +19,7 @@
       "access_location"
     ],
     "buildTargets": [
-      "higgs",
-      "meson",
-      "gemini"
+      "hera"
     ],
     "i18n": {}
   },

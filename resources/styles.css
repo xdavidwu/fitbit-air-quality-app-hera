@@ -6,6 +6,14 @@
   fill: fb-black; 
 }
 
+.foreground-fill {
+  fill: fb-white;
+}
+
+.background-fill {
+  fill: fb-black;
+}
+
 .station-item {
   display: none;
 }
@@ -32,15 +40,15 @@
 }
 
 .status {
-  x: 6; 
-  y: 26;
-  text-anchor: start;
+  x: 50%; 
+  y: 22;
+  text-anchor: middle;
 }
 
 .note {
-  x: 6; 
-  y: 50;
-  text-anchor: start;
+  x: 50%; 
+  y: 44;
+  text-anchor: middle;
   fill: fb-dark-gray;
 }
 
@@ -127,21 +135,13 @@
 }
 
 .details-iaqi {
-  height: 35;
-}
-
-.name-details {
-  x: 6; 
-  y: 26;
-  width: 100%-12;
-  text-anchor: start;
-  text-overflow: ellipsis;
+  height: 40;
 }
 
 .extras-details {
   x: 6;
   width: 100%-12;
-  height: 24;
+  height: 20;
   text-anchor: start;
   text-overflow: clip;
   fill: fb-light-gray;

@@ -44,7 +44,7 @@ export function trackTiming(category, variable, time) {
 }
 
 function gaRequest(type, params) {
-  if (!isEnabled) return;
+  return;
   let payload = "v=1"
     + "&tid=" + CONFIG.trackingId
     + "&cid=" + clientId
